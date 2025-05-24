@@ -143,7 +143,13 @@
         placeholder: 'Type to search',
         noData: 'No Results'
       },
-      coverpage: false
+      coverpage: false,
+      alias: {
+      // 让 docsify 自动为 /zh-cn/ 下所有页面加载对应的 sidebar 和 navbar
+      '/zh-cn/.*/_sidebar.md': '/zh-cn/_sidebar.md',
+      '/zh-cn/.*/_navbar.md': '/zh-cn/_navbar.md',
+      '/zh-cn/.*/README.md': '/zh-cn/README.md',
+      }
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
