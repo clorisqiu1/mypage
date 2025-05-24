@@ -2,19 +2,18 @@
 
 ---
 
-## Basic Information
+<!-- ## Basic Information
 
 - **Name:** Wen Qiu  
-- **Email:** clorisqiu1@gmail.com  
-- **Phone:** (+86) 178-5559-3386  
-- **Homepage:** [MyPage](https://clorisqiu1.github.io/)
+- **Email:** clorisqiu1@gmail.com
+- **Homepage:** [MyPage](https://clorisqiu1.github.io/mypage/)
 
----
+--- -->
 
 ## Education
 
 - **Kitami Institute of Technology** (Hokkaido, Japan, No.17 in Tohoku area)  
-  Ph.D. Candidate in Information Systems Engineering (Artificial Intelligence), Supervisor: Hiroshi Masui  
+  Ph.D. in Information Systems Engineering (Artificial Intelligence), Supervisor: Hiroshi Masui  
   Apr. 2020 – Mar. 2025
 
 - **Anhui University of Technology** (Anhui, China)  
@@ -94,4 +93,3 @@
 - 2018 National College Student Information Security Competition (Anhui Province), First Prize in Big Data and AI Applications
 - 2018 3rd National University Project Management Competition (Postgraduate, Individual), Third Prize
 - 2017 2nd National University Project Management Competition (Postgraduate, Team), First Prize; Individual, Third Prize
-

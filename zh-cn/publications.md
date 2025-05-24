@@ -2,7 +2,7 @@
 
 ---
 
-### ★ Journal Articles
+### ★ 期刊文章
 
 <details open>
 <summary><strong>2024</strong></summary>
@@ -41,7 +41,7 @@
 
 ---
 
-### ★ Conference Papers
+### ★ 会议论文
 
 <details open>
 <summary><strong>2024</strong></summary>

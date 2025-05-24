@@ -1,13 +1,13 @@
-# 📝 Notes
+# 📝 笔记
 
 ---
 
-## 🌏 Language Courses
+## 🌏 语言
 
-- [Basic Japanese Grammar](notes/basic_japanese_grammar.md)
+- [基础日语语法](notes/basic_japanese_grammar.md)
 
 ---
 
-## 📚 Professional Courses
+## 📚 专业课程
 
-- [Introduction to Artificial Intelligence](notes/ai_fundamentals.md)
+- [人工智能基础](notes/ai_fundamentals.md)

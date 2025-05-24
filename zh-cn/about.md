@@ -1,5 +1,5 @@
-# About Me
+# 关于我
 
-Wen Qiu (邱雯)
+邱雯（Wen Qiu）
 
-I hold a master's degree from [Anhui University of Technology](https://www.ahut.edu.cn/), and is a PhD at [Kitami Institute of Technology (Japan)](https://www.kitami-it.ac.jp/en/). My research interests include Deep Reinforcement Learning, Game Theory. Application areas in emergency communication networks. Now I'm a part of a Chinese open source organization [Datawhale](https://datawhale.club/home).
+我拥有 [安徽工业大学](https://www.ahut.edu.cn/) 硕士学位，现为 [日本北见工业大学](https://www.kitami-it.ac.jp/en/) 博士。我的研究方向包括深度强化学习、博弈论，应用领域涉及应急通信网络。目前，我也是中国开源组织 [Datawhale](https://datawhale.club/home) 的一员。
