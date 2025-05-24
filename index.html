@@ -28,7 +28,6 @@
   <title>Wen Qiu | Home</title>
   <meta name="description" content="Wen Qiu's Personal Academic Homepage">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Docsify theme: vue (可替换 dark/pure/buble 等) -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
   <style>
     body {
@@ -105,7 +104,7 @@
     margin-top: 8px !important;
     margin-bottom: 4px !important;
     }
-    </style>
+  </style>
 </head>
 <body>
   <div id="app">
@@ -114,24 +113,52 @@
       Postdoctoral Researcher, Kitami Institute of Technology, Japan<br>
       Deep Reinforcement Learning · Game Theory · Emergency Communication Networks
     </div>
-    <div class="docsify-nav">
-      <a href="#/about">About Me</a>
-      <a href="#/cv">CV</a>
-      <a href="#/publications">Publications</a>
-      <a href="#/notes">Notes</a>
-      <a href="#/contact">Contact</a>
-    </div>
-    <div class="contact-links">
-      <a href="mailto:clorisqiu1@gmail.com">Email</a>
-      <a href="https://scholar.google.com/citations?user=KeR9g2YAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
-      <a href="https://blog.csdn.net/weixin_41794514?spm=1010.2135.3001.5343" target="_blank">CSDN</a>
-    </div>
+    <div class="docsify-nav" id="nav"></div>
+    <div class="contact-links" id="contact"></div>
     <hr>
     <blockquote style="text-align:center; color:#687; font-size:1em;">
       “Stay curious. Keep learning. Make a difference.”
     </blockquote>
   </div>
+
   <script>
+    // 中英双语智能导航
+    var isChinese = location.pathname.indexOf('/zh-cn/') === 0;
+    var nav = document.getElementById('nav');
+    var contact = document.getElementById('contact');
+
+    if (isChinese) {
+      // 中文主页导航
+      nav.innerHTML = `
+        <a href="/zh-cn/#/about">关于我</a>
+        <a href="/zh-cn/#/cv">简历</a>
+        <a href="/zh-cn/#/publications">学术成果</a>
+        <a href="/zh-cn/#/notes">笔记</a>
+        <a href="/">English</a>
+      `;
+      contact.innerHTML = `
+        <a href="mailto:clorisqiu1@gmail.com">邮箱</a>
+        <a href="https://scholar.google.com/citations?user=KeR9g2YAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
+        <a href="https://blog.csdn.net/weixin_41794514?spm=1010.2135.3001.5343" target="_blank">CSDN博客</a>
+      `;
+    } else {
+      // 英文主页导航
+      nav.innerHTML = `
+        <a href="/#/about">About Me</a>
+        <a href="/#/cv">CV</a>
+        <a href="/#/publications">Publications</a>
+        <a href="/#/notes">Notes</a>
+        <a href="/zh-cn/">中文</a>
+      `;
+      contact.innerHTML = `
+        <a href="mailto:clorisqiu1@gmail.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=KeR9g2YAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
+        <a href="https://blog.csdn.net/weixin_41794514?spm=1010.2135.3001.5343" target="_blank">CSDN</a>
+      `;
+    }
+  </script>
+  <script>
+    // docsify 配置，必须放在 body 里（或最后），否则部分样式失效
     window.$docsify = {
       name: 'Wen Qiu',
       repo: '',
@@ -145,19 +172,17 @@
       },
       coverpage: false,
       alias: {
-      '/zh-cn/.*/_sidebar.md': '/zh-cn/_sidebar.md',
-      '/zh-cn/.*/_navbar.md': '/zh-cn/_navbar.md',
-      '/zh-cn/.*/README.md': '/zh-cn/README.md',
-      '/zh-cn/.*/about.md': '/zh-cn/about.md',
-      '/zh-cn/.*/cv.md': '/zh-cn/cv.md',
-      '/zh-cn/.*/publications.md': '/zh-cn/publications.md',
-      '/zh-cn/.*/notes.md': '/zh-cn/notes.md',
+        '/zh-cn/.*/_sidebar.md': '/zh-cn/_sidebar.md',
+        '/zh-cn/.*/_navbar.md': '/zh-cn/_navbar.md',
+        '/zh-cn/.*/README.md': '/zh-cn/README.md',
+        '/zh-cn/.*/about.md': '/zh-cn/about.md',
+        '/zh-cn/.*/cv.md': '/zh-cn/cv.md',
+        '/zh-cn/.*/publications.md': '/zh-cn/publications.md',
+        '/zh-cn/.*/notes.md': '/zh-cn/notes.md',
       }
-
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
-
